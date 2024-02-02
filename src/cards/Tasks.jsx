@@ -27,7 +27,7 @@ function Tasks() {
   ];
   console.log(tasks);
   return (
-    <div className="col-6 p-1">
+    <div className="col-6 p-3">
       <div className="p-3" style={{ backgroundColor: "#27293d" }}>
         <div className="d-flex justify-content-between">
           <div className="d-flex">

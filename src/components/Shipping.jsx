@@ -2,7 +2,7 @@ import React from "react";
 
 function Shipping() {
   return (
-    <div className="col-4 p-1">
+    <div className="col-4 p-3">
       <div className="rounded p-3" style={{ backgroundColor: "#27293d" }}>
         <div className="d-flex flex-column">
           <span className="text-secondary">total shipments</span>

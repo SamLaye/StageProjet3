@@ -3,7 +3,7 @@ import React from "react";
 
 function Members() {
   return (
-    <div className="col-6 p-1">
+    <div className="col-6 p-3">
       <div className="p-3" style={{ backgroundColor: "#27293d" }}>
         <div className="ps-1">
           <h3 className="text-capitalize">Simple Table</h3>
