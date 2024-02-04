@@ -2,25 +2,31 @@ import React from "react";
 
 function Shipping() {
   return (
-    <div className="col-4 p-3">
-      <div className="rounded p-3" style={{ backgroundColor: "#27293d" }}>
+    <div className="col-12 col-md-6 col-lg-4 p-3">
+      <div
+        className="rounded p-3"
+        style={{
+          backgroundColor: "#27293d",
+          boxShadow: "2px 2px 30px #1c1c25",
+        }}
+      >
         <div className="d-flex flex-column">
           <span className="text-secondary">total shipments</span>
           <h3 className="text-capitalize"> 763,215</h3>
         </div>
-        ______________________________
+        ________ __________ ____________
         <br />
-        ______________________________
+        ________ _______ _____ __________
         <br />
-        ______________________________
+        ________ _______ ______ _________
         <br />
-        ______________________________
+        ________ ______ _____ _____ ______
         <br />
-        ______________________________
+        _________ ______ _________ ______
         <br />
-        ______________________________
+        ______ _____ ____________ ____ ___
         <br />
-        ______________________________
+        _______ _______ ______ ______ ____
         <br />
       </div>
     </div>

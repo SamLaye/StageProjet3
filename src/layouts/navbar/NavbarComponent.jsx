@@ -10,6 +10,8 @@ function NavbarComponent({ bgColor, navbarContainerStyles }) {
         padding: "0 20px",
         height: 50,
         backgroundColor: bgColor ? bgColor : "#fff",
+        marginTop: "10px",
+        marginBottom: "10px",
         borderBottom: "1px solid rgba(0,0,0,0.1)",
         ...navbarContainerStyles,
       }}

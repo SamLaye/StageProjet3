@@ -48,7 +48,7 @@ const SidebarItem = ({
           margin: "auto 0",
         }}
       >
-        <linkItem.icon size={22} className="icon" />
+        <linkItem.icon size={22} className="icon opacity-75" />
       </div>
       <p
         style={{
@@ -57,6 +57,8 @@ const SidebarItem = ({
           fontSize: 17,
           width: "100%",
           margin: "auto 0",
+          fontSize: "12px",
+          opacity: "0.6",
         }}
       >
         {label}

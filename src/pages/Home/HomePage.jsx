@@ -6,7 +6,7 @@ import UsersSection from "sections/UsersSection";
 
 function HomePage() {
   return (
-    <div className="text-white mt-0">
+    <div className="text-white mt-3">
       <Performance />
       <Stats />
       <UsersSection />

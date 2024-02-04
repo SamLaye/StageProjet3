@@ -27,8 +27,14 @@ function Tasks() {
   ];
   console.log(tasks);
   return (
-    <div className="col-6 p-3">
-      <div className="p-3" style={{ backgroundColor: "#27293d" }}>
+    <div className="col-12 col-md-6 p-3">
+      <div
+        className="p-3 rounded"
+        style={{
+          backgroundColor: "#27293d",
+          boxShadow: "2px 2px 30px #1c1c25",
+        }}
+      >
         <div className="d-flex justify-content-between">
           <div className="d-flex">
             <h3 className="text-capitalize me-3">tasks(5)</h3>
@@ -41,7 +47,7 @@ function Tasks() {
         <hr />
         <div>
           {tasks.map((task) => (
-            <div key={Math.random()}>
+            <div className="ps-4" key={Math.random()}>
               <div className="row justify-content-between">
                 <div className="form-check col-10 my-0">
                   <input

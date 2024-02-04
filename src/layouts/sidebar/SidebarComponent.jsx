@@ -25,14 +25,17 @@ const SidebarComponent = ({
         backgroundColor: bgColor ? bgColor : "#fff",
         height: "100%",
         padding: "25px 10px",
+        marginLeft: "15px",
+        marginTop: "15px",
+        borderRadius: "10px",
         borderRight: "1px solid rgba(0,0,0,0.1)",
       }}
     >
       <div className="">
         <Image src={_react_logo} imgWidth={30} className="me-2" />
-        <span className="text-uppercase">creative tim</span>
+        <span className="text-uppercase text-white">creative tim</span>
       </div>
-      <hr />
+      <hr className="text-white" />
       <ResourceDataMap
         resourceData={links}
         resourceItem={ClonedSidebarItem}

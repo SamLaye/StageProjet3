@@ -19,7 +19,7 @@ const NavbarPaner = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 70px;
   z-index: 4;
 `;
 const BodyContainer = styled.div`
@@ -29,14 +29,15 @@ const SidebarPaner = styled.div`
   width: ${({ openedMenu }) => (!openedMenu ? "250px" : "60px")};
   height: 100vh;
   position: fixed;
-  top: 50px;
+  top: 70px;
   left: 0%;
-  background-color: #fff;
+  // background-color: #fff;
   transition: width 0.3s;
   z-index: 2;
 `;
 const MenuController = styled.div`
   position: absolute;
+  display: none !important;
   top: 5px;
   right: -10px;
   width: 25px;
