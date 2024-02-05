@@ -27,7 +27,7 @@ const BodyContainer = styled.div`
 `;
 const SidebarPaner = styled.div`
   width: ${({ openedMenu }) => (!openedMenu ? "250px" : "60px")};
-  height: 100vh;
+  height: 85vh;
   position: fixed;
   top: 70px;
   left: 0%;
