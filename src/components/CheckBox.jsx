@@ -2,7 +2,7 @@ import React from "react";
 
 function CheckBox() {
   return (
-    <>
+    <div className="col-12 col-md-6 text-md-end">
       <div
         className="btn-group d-block"
         role="group"
@@ -42,7 +42,7 @@ function CheckBox() {
           Radio 3
         </label>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -12,27 +12,27 @@ function Performance() {
           boxShadow: "2px 2px 30px #1c1c25",
         }}
       >
-        <div className="d-flex justify-content-between">
-          <div className="d-flex flex-column">
+        <div className="row justify-content-between">
+          <div className="col-12 col-md-6 bg-danger d-flex flex-column">
             <span className="text-secondary">total shipments</span>
             <h3 className="text-capitalize">performance</h3>
           </div>
           <CheckBox />
         </div>
-        ______________________________
+        ___ ___ ____ ___ ___ _____ ______ ___
         <br />
         <PerfGraphe />
-        hhh ______________________________
+        hhh _ ___ ____ ____ __ ___ ___ ____ __ ____
         <br />
-        ______________________________
+        ______ _______ _____ ______ ____ __
         <br />
-        ______________________________
+        _____ ______ ____ ______ ____ ____ _
         <br />
-        ______________________________
+        ______ ______ ______ ______ ____ __
         <br />
-        ______________________________
+        __ __________ ______ _______ _____
         <br />
-        ______________________________
+        ___ _____ _____ ___ ______ _____ ___
         <br />
       </div>
     </div>
