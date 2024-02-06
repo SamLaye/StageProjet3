@@ -29,6 +29,7 @@ const SidebarComponent = ({
         marginTop: "15px",
         borderRadius: "10px",
         borderRight: "1px solid rgba(0,0,0,0.1)",
+        overflow: "hidden",
       }}
     >
       <div className="">

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import "../assets/css/responsive.css";
 import { useRef } from "react";
 import { useMemo } from "react";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
+import { RiMenu2Line } from "react-icons/ri";
+import { IoMdClose } from "react-icons/io";
 import useWindowDimensions from "../hooks/useWindowsDimention";
 import styled from "styled-components";
 
@@ -26,7 +28,7 @@ const BodyContainer = styled.div`
   display: flex;
 `;
 const SidebarPaner = styled.div`
-  width: ${({ openedMenu }) => (!openedMenu ? "250px" : "60px")};
+  width: ${({ openedMenu }) => (!openedMenu ? "250px" : "0")};
   height: 85vh;
   position: fixed;
   top: 70px;
@@ -37,17 +39,17 @@ const SidebarPaner = styled.div`
 `;
 const MenuController = styled.div`
   position: absolute;
-  display: none !important;
   top: 5px;
-  right: -10px;
+  // right: -10px;
   width: 25px;
   height: 25px;
-  background-color: #fff;
+  // background-color: #fff;
+  color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #008fa0;
+  // border: 2px solid #008fa0;
   cursor: pointer;
   z-index: 3;
 `;
@@ -61,7 +63,7 @@ const ContaintOutlet = styled.div`
   z-index: 1;
   padding: ${({ openedMenu, minViewPort }) =>
   openedMenu ?
-    "70px 10px 0 70px" :
+    "70px 10px 0 10px" :
     minViewPort ?
       "70px 10px 0 70px" :
       "70px 10px 0 270px"};
@@ -92,16 +94,19 @@ const SpliTemplateScreen = ({ children }) => {
 
   return (
     <Container>
-      <NavbarPaner>{navbar}</NavbarPaner>
-      <BodyContainer>
-        <SidebarPaner openedMenu={openedMenu} ref={sidebarRef}>
-          <MenuController onClick={handleResize}>
+      <NavbarPaner>
+        {navbar}
+        <MenuController onClick={handleResize} id="menuController"
+        style={{ fontSize: "22px", top: "15px", left: "20px", width: "40px", height: "40px" }}>
             {openedMenu ? (
-              <AiOutlineArrowRight className="menu-controller-icon" />
+              <RiMenu2Line className="menu-controller-icon" />
             ) : (
-              <AiOutlineArrowLeft className="menu-controller-icon" />
+              <IoMdClose className="menu-controller-icon" />
             )}
-          </MenuController>
+        </MenuController>
+        </NavbarPaner>
+      <BodyContainer>
+        <SidebarPaner openedMenu={openedMenu} ref={sidebarRef} style={{ overflow: "hidden" }}>
           {sidebar}
         </SidebarPaner>
         <ContaintOutlet openedMenu={openedMenu} minViewPort={minViewPort}>

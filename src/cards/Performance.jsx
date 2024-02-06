@@ -13,7 +13,7 @@ function Performance() {
         }}
       >
         <div className="row justify-content-between">
-          <div className="col-12 col-md-6 bg-danger d-flex flex-column">
+          <div className="col-12 col-md-6 d-flex flex-column">
             <span className="text-secondary">total shipments</span>
             <h3 className="text-capitalize">performance</h3>
           </div>
